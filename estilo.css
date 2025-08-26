@@ -1,7 +1,6 @@
 
 body{  
- font-family: 'Roboto', sans-serif;
- overflow: auto;
+ font-family: 'Roboto', sans-serif; 
 }
 h1{
     color: aliceblue;
@@ -10,8 +9,6 @@ h1{
     width: 90px;
     height: auto;
     border-radius: 50%;
-    box-sizing: content-box;
-    
 }
 .header{
     padding: 10px;
@@ -129,5 +126,96 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .hInicio {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .hInicio ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hInicio li {
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  .hDetalle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hDetalle img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .hTexto p {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .cFotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cFoText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cFoText img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .cFoText p {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .pllamada {
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pMensaje {
+    margin: 0;
+    font-size: medium;
+  }
+
+  .pllamada button {
+    width: 100%;
+    font-size: large;
+    margin-top: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
 }
 
