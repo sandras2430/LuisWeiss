@@ -1,0 +1,133 @@
+
+body{  
+ font-family: 'Roboto', sans-serif;
+ overflow: auto;
+}
+h1{
+    color: aliceblue;
+}
+.hInicio img {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: content-box;
+    
+}
+.header{
+    padding: 10px;
+    padding: 30px 30px 30px 25%;
+    display: block;
+    background-color: #1f2937;
+    height: auto;
+}
+
+.hInicio{
+    display: flex;        
+    justify-content:space-between;
+    margin-bottom: 70px;
+}
+.hInicio li{
+    list-style-type: none;
+    color: #e5e7eb; 
+    width: 100px; 
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.hInicio ul{
+    display: flex;
+    gap: 10px;
+    font-size: small;
+}
+.hInicio li:hover{
+    background-color: aliceblue;
+    color: #1f2937;
+    cursor: pointer;
+}
+.hDetalle{
+    display: flex;
+    gap: 20px;
+}
+.hDetalle img{
+    width: 450px;
+    height: auto;
+}
+.hTexto{
+    display: block;    
+}
+.hTexto p{
+    width: 400px;
+    color: #e5e7eb;
+    text-align: justify;
+}
+h2, h3{
+    text-align: center;
+    color: #1f2937;
+    margin-top: 50px;
+}
+.cFotos{
+    display: flex;
+    justify-content: center;    
+    
+}
+.cFotos{
+    display: flex;
+    gap: 20px;
+}
+.cFoText{
+    flex-direction: column;       
+}
+.cFoText img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.cFoText p{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    color: #1f2937;
+}
+.cGaleria{
+    background-color: #e5e7e9;
+}
+.pllamada{
+    width: 600px;
+    height: 100px;
+    background-color: #3882f6;
+    color: #e5e7e9;
+    border-radius: 10px;    
+    margin: auto;    
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+}
+.pMensaje{
+    margin: 0 150px 0 20px;
+    font-size:large;
+}
+.pllamada button{
+    background-color: #3882f6;
+    color: #e5e7e9;
+    width: 250px;
+    height: 50px;
+    font-size:xx-large;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+he{
+    margin-top: 35px;
+}
+footer{    
+    background-color:#1f2937;
+    color: #e5e7e9;
+    margin-top: 70px;    
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
