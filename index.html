@@ -9,22 +9,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="estilo.css">        
         <title>Soluciones para tu Edificio y Hogar Luis Weiss</title>
+        <link rel="icon" href="logo.png">
     </head>
     <body>
+        <div class="top"></div>
         <div class="header">
-            <div class="hInicio">
-                <img src="logo.png" alt="Logo">
+            <div class="hInicio">                
+                <img src="logoP.png" alt="Logo">                
                 <ul>
-                  <li>Aires Acondicionados</li>  
-                  <li>Termotanques Solares</li>
-                  <li>Climatizacion de Piscinas</li>
-                  <li>Mantenimiento y Construccion</li>
+                  <a href="#servicios"><li>Nuestros Servicios</li> </a>
+                  <a href="#proyectos"><li>Proyectos Concluidos</li></a>
+                  <a href="#contacto"><li>Contacto</li></a>
                 </ul>
             </div>
             <div class="hDetalle">
                 <div class="hTexto">
                     <h1>Soluciones y Servicios Integrales de la Construccion</h1>                        
-                    <p>Nos especializamos en la instalación de aires acondicionados, 
+                    <p>Desde hace mas de 25 años nos especializamos en la instalación 
+                        de aires acondicionados, 
                         termotanques solares, climatización de piscinas,
                         construcción y mantenimiento de obras. Ofrecemos servicios 
                         completos y  preventivo para particulares y edificios.
@@ -33,7 +35,7 @@
                 <img src="hogar.jpg" alt="Hogar">
             </div>
         </div>
-        <h2>Contamos con experiencia en el mercado</h2>
+        <h2 id="servicios">Servicios que realizamos</h2>
         <div class="cFotos">
             <div class="cFoText">
                 <img src="aire.png" alt="Aire Acondicionado">
@@ -50,6 +52,54 @@
             <div class="cFoText">
                 <img src="construccion.avif" alt="Contrucciones">
                 <p>Cuidamos su hogar con soluciones a medida y de calidad.</p>            
+            </div>
+        </div>
+        
+        <div class="marcas">
+            <h4>Marcas que nos avalan</h4>
+            <img src="logoIntertower.png" alt="Hoteles Intertower" id="inter">
+            <img src="logoExtremo.png" alt="Local Xtremo" id="xtremo">            
+            <img src="logoVitamsol.png" alt="Dietetica Vitamsol" id="vitamsol">
+        </div>
+        <h3 id="proyectos">Proyectos Concluidos</h3>
+        <div class="cFotos" id="desborde">
+            <div class="cFoText" id="idcFoText">
+                <img src="./fotos/Ampliacion planta alta.jfif" alt="">
+                <p>muestra1</p>
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <img src="./fotos/bano.jfif" alt="">
+                <p>muestra 2</p>
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <img src="./fotos/Intertower terraza 2.jfif" alt="">
+                <p>muestra 3</p>
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <img src="./fotos/Intertower terraza 3.jfif" alt="">
+                <p>muestra 3</p>
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <img src="./fotos/Intertower terraza.jpeg" alt="">
+                <p>muestra 3</p>
+            </div>
+        </div>
+        <div class="video">
+            <div class="ivideo">
+                <video src="" ></video>
+                <p></p>
+            </div>
+            <div class="ivideo">
+                <video src="" ></video>
+                <p></p>
+            </div>
+            <div class="ivideo">
+                <video src="" ></video>
+                <p></p>
+            </div>
+            <div class="ivideo">
+                <video src="" ></video>
+                <p></p>
             </div>
         </div>
         <h3>Testimonios</h3>
@@ -78,11 +128,12 @@
                     <span style="font-weight: bolder;"> - Joseph Gonzalez -</span></p>
             </div>           
         </div>
-        <div class="pllamada">
+        <div class="pllamada" id="contacto">
             <div class="pMensaje"><p>Llamanos Ahora!</p>
             <p>Telefono </p></div>
             <button>342 501-2784</button>
         </div>
         <footer>Sandra Martinez</footer>
+        <a href="#top" class="boton-subir">↑</a>
     </body>
 </html>

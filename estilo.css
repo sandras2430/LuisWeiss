@@ -2,16 +2,19 @@
 body{  
  font-family: 'Roboto', sans-serif; 
 }
+html {
+  scroll-behavior: smooth;
+}
 h1{
     color: aliceblue;
     font-size: 2.5em;
     margin: 0;
 }
 .hInicio img {
-    width: 10%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100px;
+    height: auto;    
+    padding: 0px;         
+    border-bottom: 1px solid #e5e7e9;
 }
 .header{
     padding: 10px;
@@ -29,16 +32,23 @@ h1{
 .hInicio li{
     list-style-type: none;
     color: #e5e7eb; 
-    width: 100px;     
-    text-align: center;
-    height: 40%;
+    width: 150px;     
+    text-align: center;    
+    height: auto;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px;   
+    gap: 15px; 
+}
+a{
+  text-decoration: none;
+}
+.hInicio p{
+  color: #e5e7e9;
 }
 .hInicio ul{
     display: flex;
-    gap: 10px;
-    font-size: small;
+    /*gap: 5px;*/
+    font-size:medium;    
 }
 .hInicio li:hover{
     background-color:#e5e7eb;
@@ -91,8 +101,83 @@ h2, h3{
     text-align: center;
     color: #1f2937;
 }
+.cFoText#idcFoText img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
 
-/*parte de Testimonial*/
+/*fotos*/
+.cFotos#desborde{
+  flex-wrap: wrap;
+}
+/*fin fotos*/
+
+/*marcas*/
+.marcas{
+  display: flex;
+  margin: 100px 70px 100px 20px;
+  justify-content:space-between;
+  align-items: center;
+}
+.marcas img{
+  gap: 100px;  
+  
+}
+#xtremo{
+  width: 300px;
+  object-fit: cover;
+}
+#inter{
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+#vitamsol{
+  width: 150px;
+  border-radius: 50%;
+  height: auto;
+  object-fit: cover;
+}
+.marcas h4{
+  border: 1px solid #0f095c;
+  box-shadow: 2px 4px 16px rgba(141, 102, 102, 0.06);
+  color: #333;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*fin marcas*/
+
+
+/*boton subir*/
+.boton-subir {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  
+  /* Estilos visuales */
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+  
+  /* Efecto de transición al pasar el mouse */
+  transition: background-color 0.3s ease;
+}
+
+.boton-subir:hover {
+  background-color: #555;
+}
+
+/*fin boton subir*/
+
+/*Testimonial*/
 .cGaleria{
     background-color: #e5e7e9;
     display: flex;  
@@ -159,4 +244,769 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+body{  
+ font-family: 'Roboto', sans-serif; 
+}
+html {
+  scroll-behavior: smooth;
+}
+h1{
+    color: aliceblue;
+    font-size: 2.5em;
+    margin: 0;
+}
+.hInicio img {
+    width: 100px;
+    height: auto;    
+    padding: 0px;         
+    border-bottom: 1px solid #e5e7e9;
+}
+.header{
+    padding: 10px;
+    padding: 30px 30px 5% 20%;
+    display: block;
+    background-color: #1f2937;
+    height: auto;
+}
+
+.hInicio{
+    display: flex;        
+    justify-content:space-between;
+    margin-bottom: 70px;
+}
+.hInicio li{
+    list-style-type: none;
+    color: #e5e7eb; 
+    width: 150px;     
+    text-align: center;    
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;   
+    gap: 15px; 
+}
+a{
+  text-decoration: none;
+}
+.hInicio p{
+  color: #e5e7e9;
+}
+.hInicio ul{
+    display: flex;
+    /*gap: 5px;*/
+    font-size:medium;    
+}
+.hInicio li:hover{
+    background-color:#e5e7eb;
+    color: #1f2937;
+    cursor: pointer;
+}
+.hDetalle{
+    display: flex;
+    gap: 20px;
+}
+.hDetalle img{
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+}
+.hTexto{
+    display: block;    
+}
+.hTexto p{
+    width: 400px;
+    color: #e5e7eb;
+    text-align: justify;
+    margin: 0;
+}
+h2, h3{
+    text-align: center;
+    color: #1f2937;
+    margin-top: 50px;
+}
+.cFotos{
+    display: flex;
+    justify-content: center;    
+    
+}
+.cFotos{
+    display: flex;
+    gap: 20px;
+}
+.cFoText{
+    flex-direction: column;       
+}
+.cFoText img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.cFoText p{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    color: #1f2937;
+}
+.cFoText#idcFoText img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*fotos*/
+.cFotos#desborde{
+  flex-wrap: wrap;
+}
+/*fin fotos*/
+
+/*marcas*/
+.marcas{
+  display: flex;
+  margin: 100px 70px 100px 20px;
+  justify-content:space-between;
+  align-items: center;
+}
+.marcas img{
+  gap: 100px;  
+  
+}
+#xtremo{
+  width: 300px;
+  object-fit: cover;
+}
+#inter{
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+#vitamsol{
+  width: 150px;
+  border-radius: 50%;
+  height: auto;
+  object-fit: cover;
+}
+.marcas h4{
+  border: 1px solid #0f095c;
+  box-shadow: 2px 4px 16px rgba(141, 102, 102, 0.06);
+  color: #333;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*fin marcas*/
+
+
+/*boton subir*/
+.boton-subir {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  
+  /* Estilos visuales */
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+  
+  /* Efecto de transición al pasar el mouse */
+  transition: background-color 0.3s ease;
+}
+
+.boton-subir:hover {
+  background-color: #555;
+}
+
+/*fin boton subir*/
+
+/*Testimonial*/
+.cGaleria{
+    background-color: #e5e7e9;
+    display: flex;  
+    flex-wrap: wrap;      
+    padding: 10px;        
+    align-items: center;
+}
+.iGaleria{  
+  gap: 20px;      
+  padding: 10px;
+  display: flex;
+  margin: auto 50px;
+  align-items: center;
+}
+.iGaleria img{
+  width: 100px;  
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;  
+}
+.iGaleria p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #1f2937;
+  width: 400px;
+  height: auto;
+  background-color: #e5e7e9;  
+}
+/*fin testimonial*/
+
+.pllamada{
+    width: 600px;
+    height: 100px;
+    background-color: #3882f6;
+    color: #e5e7e9;
+    border-radius: 10px;    
+    margin: auto;    
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+}
+.pMensaje{
+    margin: 0 150px 0 20px;
+    font-size:large;
+}
+.pllamada button{
+    background-color: #3882f6;
+    color: #e5e7e9;
+    width: 250px;
+    height: 50px;
+    font-size:xx-large;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+he{
+    margin-top: 35px;
+}
+footer{    
+    background-color:#1f2937;
+    color: #e5e7e9;
+    margin-top: 70px;    
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablets grandes y escritorios pequeños (1024px - 1200px) */
+@media screen and (max-width: 1200px) {
+    .header {
+        padding: 20px 20px 3% 15%;
+    }
+    
+    .hDetalle img {
+        width: 400px;
+    }
+    
+    .hTexto p {
+        width: 350px;
+    }
+    
+    .marcas {
+        margin: 80px 50px 80px 15px;
+    }
+    
+    #xtremo, #inter {
+        width: 250px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .header {
+        padding: 20px 15px 3% 10%;
+    }
+    
+    .hInicio {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .hInicio ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .hInicio li {
+        width: 120px;
+        margin: 5px;
+    }
+    
+    .hDetalle {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .hDetalle img {
+        width: 350px;
+    }
+    
+    .hTexto p {
+        width: 350px;
+        text-align: center;
+    }
+    
+    .cFotos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .cFoText img {
+        width: 250px;
+        height: 170px;
+    }
+    
+    .cFoText p {
+        width: 250px;
+    }
+    
+    .cFoText#idcFoText img {
+        width: 400px;
+        height: 320px;
+    }
+    
+    .marcas {
+        flex-direction: column;
+        gap: 30px;
+        margin: 60px 20px;
+        text-align: center;
+    }
+    
+    #xtremo, #inter {
+        width: 200px;
+    }
+    
+    #vitamsol {
+        width: 120px;
+    }
+    
+    .iGaleria {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .iGaleria p {
+        width: 300px;
+        margin-top: 15px;
+    }
+    
+    .pllamada {
+        width: 500px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .pMensaje {
+        margin: 0 0 20px 0;
+    }
+    
+    .pllamada button {
+        width: 200px;
+        margin-top: 10px;
+    }
+}
+
+/* Móviles grandes (480px - 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2, h3 {
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    
+    .header {
+        padding: 15px 10px 2% 5%;
+    }
+    
+    .hInicio img {
+        width: 80px;
+    }
+    
+    .hInicio ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hInicio li {
+        width: 200px;
+        margin: 5px 0;
+    }
+    
+    .hDetalle img {
+        width: 300px;
+    }
+    
+    .hTexto p {
+        width: 300px;
+        font-size: 14px;
+    }
+    
+    .cFoText img {
+        width: 200px;
+        height: 140px;
+    }
+    
+    .cFoText p {
+        width: 200px;
+        font-size: 14px;
+    }
+    
+    .cFoText#idcFoText img {
+        width: 320px;
+        height: 250px;
+    }
+    
+    .marcas {
+        margin: 40px 15px;
+        gap: 20px;
+    }
+    
+    #xtremo, #inter {
+        width: 150px;
+    }
+    
+    #vitamsol {
+        width: 100px;
+    }
+    
+    .marcas h4 {
+        font-size: medium;
+        padding: 8px;
+    }
+    
+    .boton-subir {
+        font-size: 20px;
+        padding: 8px 12px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .cGaleria {
+        flex-direction: column;
+    }
+    
+    .iGaleria {
+        margin: 15px 20px;
+    }
+    
+    .iGaleria img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .iGaleria p {
+        width: 250px;
+        font-size: 14px;
+    }
+    
+    .pllamada {
+        width: 350px;
+        padding: 15px;
+    }
+    
+    .pMensaje {
+        font-size: medium;
+    }
+    
+    .pllamada button {
+        width: 180px;
+        height: 45px;
+        font-size: x-large;
+    }
+    
+    footer {
+        height: 70px;
+        font-size: 14px;
+    }
+}
+
+/* Móviles medianos (375px - 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .header {
+        padding: 10px 8px 2% 3%;
+    }
+    
+    .hInicio {
+        margin-bottom: 30px;
+    }
+    
+    .hInicio li {
+        width: 180px;
+    }
+    
+    .hDetalle img {
+        width: 250px;
+    }
+    
+    .hTexto p {
+        width: 250px;
+    }
+    
+    .cFoText img {
+        width: 180px;
+        height: 120px;
+    }
+    
+    .cFoText p {
+        width: 180px;
+    }
+    
+    .cFoText#idcFoText img {
+        width: 280px;
+        height: 220px;
+    }
+    
+    .marcas {
+        margin: 30px 10px;
+    }
+    
+    #xtremo, #inter {
+        width: 120px;
+    }
+    
+    .iGaleria p {
+        width: 220px;
+    }
+    
+    .pllamada {
+        width: 300px;
+        padding: 12px;
+    }
+    
+    .pllamada button {
+        width: 160px;
+        font-size: large;
+    }
+}
+
+/* Móviles pequeños (320px - 375px) */
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    h2, h3 {
+        font-size: 1.3em;
+    }
+    
+    .header {
+        padding: 8px 5px 1% 2%;
+    }
+    
+    .hInicio img {
+        width: 70px;
+    }
+    
+    .hInicio li {
+        width: 150px;
+        padding: 8px;
+    }
+    
+    .hDetalle img {
+        width: 220px;
+    }
+    
+    .hTexto p {
+        width: 220px;
+        font-size: 13px;
+    }
+    
+    .cFoText img {
+        width: 160px;
+        height: 110px;
+    }
+    
+    .cFoText p {
+        width: 160px;
+        font-size: 13px;
+    }
+    
+    .cFoText#idcFoText img {
+        width: 250px;
+        height: 200px;
+    }
+    
+    .marcas {
+        margin: 25px 8px;
+        gap: 15px;
+    }
+    
+    #xtremo, #inter {
+        width: 100px;
+    }
+    
+    #vitamsol {
+        width: 80px;
+    }
+    
+    .marcas h4 {
+        font-size: small;
+        padding: 6px;
+    }
+    
+    .boton-subir {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+    
+    .iGaleria {
+        margin: 10px 15px;
+    }
+    
+    .iGaleria img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .iGaleria p {
+        width: 200px;
+        font-size: 13px;
+    }
+    
+    .pllamada {
+        width: 270px;
+        padding: 10px;
+    }
+    
+    .pMensaje {
+        font-size: small;
+    }
+    
+    .pllamada button {
+        width: 140px;
+        height: 40px;
+        font-size: medium;
+    }
+    
+    footer {
+        height: 60px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
+/* Móviles muy pequeños (hasta 320px) */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.4em;
+    }
+    
+    .hInicio li {
+        width: 130px;
+    }
+    
+    .hDetalle img {
+        width: 200px;
+    }
+    
+    .hTexto p {
+        width: 200px;
+    }
+    
+    .cFoText img {
+        width: 140px;
+        height: 100px;
+    }
+    
+    .cFoText p {
+        width: 140px;
+    }
+    
+    .cFoText#idcFoText img {
+        width: 220px;
+        height: 180px;
+    }
+    
+    .iGaleria p {
+        width: 180px;
+    }
+    
+    .pllamada {
+        width: 240px;
+    }
+    
+    .pllamada button {
+        width: 120px;
+        height: 35px;
+        font-size: small;
+    }
+}
+
+/* Orientación horizontal para móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .header {
+        padding: 10px 15px 1% 10%;
+    }
+    
+    .hInicio {
+        margin-bottom: 20px;
+    }
+    
+    .hDetalle {
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .hDetalle img {
+        width: 200px;
+    }
+    
+    .hTexto p {
+        width: 200px;
+        font-size: 13px;
+    }
+    
+    .boton-subir {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Mejoras para accesibilidad y usabilidad */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .boton-subir {
+        transition: none;
+    }
+}
+
+@media (hover: none) {
+    .hInicio li:hover {
+        background-color: transparent;
+        color: #e5e7eb;
+    }
+    
+    .boton-subir:hover {
+        background-color: #333;
+    }
 }
