@@ -4,15 +4,18 @@ body{
 }
 h1{
     color: aliceblue;
+    font-size: 2.5em;
+    margin: 0;
 }
 .hInicio img {
-    width: 90px;
+    width: 10%;
     height: auto;
     border-radius: 50%;
+    object-fit: cover;
 }
 .header{
     padding: 10px;
-    padding: 30px 30px 30px 25%;
+    padding: 30px 30px 5% 20%;
     display: block;
     background-color: #1f2937;
     height: auto;
@@ -26,9 +29,9 @@ h1{
 .hInicio li{
     list-style-type: none;
     color: #e5e7eb; 
-    width: 100px; 
+    width: 100px;     
     text-align: center;
-    height: auto;
+    height: 40%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -38,7 +41,7 @@ h1{
     font-size: small;
 }
 .hInicio li:hover{
-    background-color: aliceblue;
+    background-color:#e5e7eb;
     color: #1f2937;
     cursor: pointer;
 }
@@ -49,6 +52,7 @@ h1{
 .hDetalle img{
     width: 450px;
     height: auto;
+    object-fit: cover;
 }
 .hTexto{
     display: block;    
@@ -57,6 +61,7 @@ h1{
     width: 400px;
     color: #e5e7eb;
     text-align: justify;
+    margin: 0;
 }
 h2, h3{
     text-align: center;
@@ -86,9 +91,37 @@ h2, h3{
     text-align: center;
     color: #1f2937;
 }
+
+/*parte de Testimonial*/
 .cGaleria{
     background-color: #e5e7e9;
+    display: flex;  
+    flex-wrap: wrap;      
+    padding: 10px;        
+    align-items: center;
 }
+.iGaleria{  
+  gap: 20px;      
+  padding: 10px;
+  display: flex;
+  margin: auto 50px;
+  align-items: center;
+}
+.iGaleria img{
+  width: 100px;  
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;  
+}
+.iGaleria p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #1f2937;
+  width: 400px;
+  height: auto;
+  background-color: #e5e7e9;  
+}
+/*fin testimonial*/
+
 .pllamada{
     width: 600px;
     height: 100px;
@@ -122,100 +155,8 @@ footer{
     background-color:#1f2937;
     color: #e5e7e9;
     margin-top: 70px;    
-    height: 70px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-@media (max-width: 768px) {
-  .header {
-    padding: 20px;
-  }
-
-  .hInicio {
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .hInicio ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hInicio li {
-    width: auto;
-    padding: 8px 16px;
-  }
-
-  .hDetalle {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hDetalle img {
-    width: 80%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  .hTexto p {
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .cFotos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cFoText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cFoText img {
-    width: 80%;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .cFoText p {
-    width: 90%;
-    max-width: 300px;
-    margin: 10px 0;
-  }
-
-  .pllamada {
-    flex-direction: column;
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .pMensaje {
-    margin: 0;
-    font-size: medium;
-  }
-
-  .pllamada button {
-    width: 100%;
-    font-size: large;
-    margin-top: 15px;
-  }
-
-  footer {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-}
-
