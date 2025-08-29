@@ -417,18 +417,33 @@ footer {
     align-items: center;
     justify-content:space-between;
 }
-.fRedes, .fDatos{
+.fRedes, .fDatos, .experiencia{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 300px;    
-    margin: 0 100px 0 100px;
+    
 }
+.experiencia img{
+width: 150px;
+height: 150px;
+}
+.fRedes p{
+    margin-left: 10px;
+}
+.fRedes{
+    margin-left: 100px;
+}
+.fDatos{
+    margin-right: 100px;
+}
+
+
 .fRimglogo{
     width: 100px;
     height: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .fRimgRed{
     width: 30px;
@@ -437,21 +452,21 @@ footer {
 }
 .dMail{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 20px;    
     margin: 0;
-
+    padding-top: 0;
 }
 .dContacto{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 28px;    
+    border-bottom: 1px solid #e5e7e9;
 }
 .fData{
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
+    margin-bottom: 20px;
 }
 .social{
     display: flex;
