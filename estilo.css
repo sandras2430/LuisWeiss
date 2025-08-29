@@ -305,6 +305,7 @@ a {
             flex-wrap: wrap;   
             width: 100%;
             
+            
         }
 /*termina galeria*/
 
@@ -368,37 +369,7 @@ a {
     background-color: #555;
 }
 
-/* Testimonial */
-.cGaleria {
-    background-color: #e5e7e9;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    align-items: center;
-}
 
-.iGaleria {
-    gap: 20px;
-    padding: 10px;
-    display: flex;
-    margin: auto 50px;
-    align-items: center;
-}
-
-.iGaleria img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.iGaleria p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1f2937;
-    width: 400px;
-    height: auto;
-    background-color: #e5e7e9;
-}
 
 /* Llamada a la acción */
 .pllamada {
@@ -411,6 +382,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    font-weight:900;
        
 }
 .pllamada button {
@@ -439,22 +411,58 @@ footer {
     background-color: #1f2937;
     color: #e5e7e9;
     margin-top: 70px;
-    height: 90px;
+    height: 300px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-between;
 }
-.instagram img{
-    width: 50px;
-    height: 50px;    
-    margin-right: 150px;
+.fRedes, .fDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;    
+    margin: 0 100px 0 100px;
 }
-.fRef{
-    width: 150px;
-    height: auto;
-    margin-left: 150px;
-    font-weight: lighter;
+.fRimglogo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
+.fRimgRed{
+    width: 30px;
+    height: 30px;
+    
+}
+.dMail{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+
+}
+.dContacto{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+.fData{
+    font-family:'Times New Roman', Times, serif
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;    
+}
+.social svg {
+  fill: #FFFFFF;  /* Por ejemplo, blanco */
+  
+}
+
 
 /* MEDIA QUERIES - RESPONSIVO */
 
@@ -830,11 +838,7 @@ footer {
         max-width: 200px;
     }
     
-    .iGaleria p {
-        max-width: 180px;
-        font-size: 13px;
-    }
-    
+        
     .pllamada {
         width: 98%;
         padding: 10px;
