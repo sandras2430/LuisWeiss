@@ -1,0 +1,80 @@
+# robots.txt para sitio web de servicios/empresa
+
+# Permitir a todos los bots acceder al sitio principal
+User-agent: *
+Allow: /
+
+# Páginas y secciones importantes que queremos indexar
+Allow: /index.html
+Allow: /servicios/
+Allow: /proyectos/
+Allow: /contacto/
+
+# Permitir acceso a recursos necesarios para SEO
+Allow: /css/
+Allow: /js/
+Allow: /fotos/
+Allow: /videos/
+
+# Bloquear archivos y directorios que no deben indexarse
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+
+# Bloquear archivos específicos
+Disallow: *.log
+Disallow: *.tmp
+Disallow: *.bak
+Disallow: /config/
+Disallow: /.env
+Disallow: /database/
+
+# Bloquear parámetros de URL que no aportan valor SEO
+Disallow: /*?print=*
+Disallow: /*?download=*
+Disallow: /*?debug=*
+Disallow: /*?test=*
+Disallow: /*?preview=*
+
+# Configuraciones específicas para bots importantes
+User-agent: Googlebot
+Allow: /
+Allow: /estilo.css
+Allow: /js/
+Allow: /fotos/
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+Allow: /fotos/
+
+# Bloquear bots problemáticos o innecesarios
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap - IMPORTANTE: Actualizar con la URL real de tu sitio
+Sitemap: https://luisweissservicios.casa/sitemap.xml
+Sitemap: https://luisweissservicios.casa/sitemap-images.xml
+
+# Información adicional
+Host: https://luisweissservicios.casa/ 
+Clean-param: utm_source&utm_medium&utm_campaign (para Google, elimina parámetros de tracking)
