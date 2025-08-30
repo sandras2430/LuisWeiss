@@ -478,83 +478,65 @@ height: 150px;
   
 }
 
+/* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
 
-/* MEDIA QUERIES - RESPONSIVO */
-
-/* Tablets y pantallas medianas (768px - 1024px) */
-@media screen and (max-width: 1024px) {
+/* Tablets grandes y pantallas medianas (1024px - 1200px) */
+@media screen and (max-width: 1200px) {
     .header {
-        padding: 20px;
+        padding: 20px 20px 5% 15%;
     }
     
     .hDetalle {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .hDetalle img {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .hTexto p {
-        width: 100%;
-        max-width: 500px;
-    }
-    
-    .marcas {
-        margin: 50px 20px;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    
-    #xtremo, #inter {
-        width: 200px;
-    }
-    
-    #vitamsol {
-        width: 120px;
-    }
-    
-    .pllamada {
-        width: 90%;
-        max-width: 500px;
-        flex-direction: column;
-        text-align: center;
         gap: 15px;
     }
     
+    .hDetalle img {
+        width: 350px;
+    }
+    
+    .hTexto p {
+        width: 300px;
+    }
+    
+    .marcas {
+        margin: 80px 50px 80px 15px;
+    }
+    
+    #xtremo, #inter {
+        width: 250px;
+    }
+    
+    .pllamada {
+        width: 500px;
+    }
+    
     .pllamada button {
-        width: 100%;
-        max-width: 250px;
+        width: 250px;
+        font-size: x-large;
     }
     
-    .iGaleria {
-        margin: auto 20px;
+    .fRedes {
+        margin-left: 50px;
     }
     
-    .iGaleria p {
-        width: 100%;
-        max-width: 350px;
-    }
-    
-    .gallery-container {
-        width: 400px;
-        height: 300px;
-    }
-    
-    .galerias {
-        font-size: 28px;
-        margin-top: 70px;
+    .fDatos {
+        margin-right: 50px;
     }
 }
 
-/* Tablets pequeñas (768px - 991px) */
-@media screen and (max-width: 991px) {
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .header {
+        padding: 20px 15px 5% 10%;
+    }
+    
     .hInicio {
         flex-direction: column;
         gap: 20px;
-        text-align: center;
         margin-bottom: 40px;
     }
     
@@ -567,16 +549,34 @@ height: 150px;
     .hInicio li {
         width: auto;
         min-width: 120px;
+        margin: 5px;
     }
     
-    .cFotos {
+    .hDetalle {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .hDetalle img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .hTexto p {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
     }
     
     .cFoText p {
         width: 100%;
         max-width: 400px;
+    }
+    
+    .serv p {
+        width: 100%;
+        max-width: 250px;
     }
     
     .cFoText#idcFoText img,
@@ -586,153 +586,90 @@ height: 150px;
         height: 300px;
     }
     
+    .gallery-container {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+    
     .contenedorDeGalerias {
         gap: 20px;
-    }
-    
-    .gallery-container {
-        width: 350px;
-        height: 280px;
-    }
-    
-    .instagram img {
-        margin-right: 50px;
-    }
-    
-    .fRef {
-        margin-left: 50px;
-    }
-}
-
-/* Móviles grandes (576px - 767px) */
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2, h3 {
-        font-size: 1.5em;
-        margin-top: 30px;
-    }
-    
-    .header {
-        padding: 15px;
-    }
-    
-    .hDetalle img {
-        max-width: 300px;
-    }
-    
-    .cFoText img {
-        width: 200px;
-        height: 120px;
-    }
-    
-    .serv p, .cFoText p {
-        width: 100%;
-        max-width: 300px;
         padding: 0 15px;
     }
     
-    .cFoText#idcFoText img,
-    .cFoText#idcFoText video {
-        max-width: 300px;
-        height: 225px;
+    .galerias {
+        font-size: 28px;
+        margin-top: 60px;
     }
     
     .marcas {
         flex-direction: column;
-        text-align: center;
+        margin: 60px 20px;
         gap: 30px;
-        margin: 30px 15px;
-    }
-    
-    .marcas h4 {
-        font-size: medium;
-        padding: 8px 15px;
+        text-align: center;
     }
     
     #xtremo, #inter {
-        width: 150px;
+        width: 200px;
     }
     
     #vitamsol {
-        width: 100px;
-    }
-    
-    .gallery-container {
-        width: 300px;
-        height: 240px;
-    }
-    
-    .galerias {
-        font-size: 24px;
-        margin-top: 50px;
-        padding: 0 15px;
-    }
-    
-    .contenedorDeGalerias {
-        padding: 0 15px;
-    }
-    
-    .iGaleria {
-        flex-direction: column;
-        text-align: center;
-        margin: 20px auto;
-    }
-    
-    .iGaleria p {
-        max-width: 280px;
-        margin-top: 15px;
+        width: 120px;
     }
     
     .pllamada {
-        width: 95%;
-        margin: 20px auto;
-        padding: 15px;
+        width: 90%;
+        max-width: 400px;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
     }
     
     .pllamada button {
-        font-size: large;
-        height: 45px;
+        width: 100%;
+        max-width: 250px;
     }
     
     .llamanos {
-        font-size: 22px;
-        margin: 30px auto 15px auto;
-        padding: 0 15px;
+        font-size: 24px;
+        margin: 40px auto 10px auto;
     }
     
     footer {
-        height: auto;
-        padding: 15px;
         flex-direction: column;
-        gap: 15px;
+        height: auto;
         text-align: center;
+        gap: 20px;
     }
     
-    .instagram img {
+    .fRedes, .fDatos, .experiencia {
         margin: 0;
+        min-height: auto;
+        padding: 15px;
     }
     
-    .fRef {
-        margin: 0;
-        text-align: center;
+    .dContacto {
+        font-size: 24px;
+    }
+    
+    .dMail {
+        font-size: 18px;
     }
 }
 
-/* Móviles pequeños (hasta 575px) */
-@media screen and (max-width: 575px) {
+/* Móviles grandes (480px - 768px) */
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 1.8em;
     }
     
     h2, h3 {
+        margin-top: 30px;
         font-size: 1.3em;
     }
     
     .header {
-        padding: 10px;
+        padding: 15px 10px 5% 5%;
     }
     
     .hInicio img {
@@ -740,34 +677,55 @@ height: 150px;
     }
     
     .hInicio li {
-        min-width: 100px;
-        padding: 8px;
         font-size: small;
+        padding: 8px;
+        min-width: 100px;
     }
     
     .hDetalle img {
-        max-width: 250px;
+        max-width: 300px;
     }
     
     .hTexto p {
         font-size: 14px;
-        padding: 0 10px;
+        max-width: 350px;
+    }
+    
+    .cFotos {
+        gap: 15px;
     }
     
     .cFoText img {
-        width: 180px;
-        height: 110px;
+        width: 200px;
+        height: 120px;
+    }
+    
+    .serv img {
+        width: 200px;
+        height: 120px;
     }
     
     .cFoText#idcFoText img,
     .cFoText#idcFoText video {
-        max-width: 250px;
-        height: 180px;
+        max-width: 300px;
+        height: 250px;
     }
     
     .gallery-container {
-        width: 250px;
-        height: 200px;
+        max-width: 300px;
+        height: 250px;
+    }
+    
+    .image-info {
+        padding: 20px 15px 10px;
+    }
+    
+    .image-info h3 {
+        font-size: 16px;
+    }
+    
+    .image-info p {
+        font-size: 12px;
     }
     
     .arrow {
@@ -781,6 +739,150 @@ height: 150px;
         height: 10px;
     }
     
+    .galerias {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    
+    .contenedorDeGalerias {
+        padding: 0 10px;
+    }
+    
+    .marcas {
+        margin: 40px 10px;
+        gap: 20px;
+    }
+    
+    #xtremo, #inter {
+        width: 150px;
+    }
+    
+    #vitamsol {
+        width: 100px;
+    }
+    
+    .marcas h4 {
+        font-size: medium;
+        padding: 8px;
+    }
+    
+    .pllamada {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .pllamada button {
+        height: 40px;
+        font-size: large;
+    }
+    
+    .llamanos {
+        font-size: 20px;
+        margin: 30px auto 10px auto;
+    }
+    
+    .experiencia img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .fRimglogo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .fRimgRed {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .dContacto {
+        font-size: 20px;
+    }
+    
+    .dMail {
+        font-size: 16px;
+    }
+    
+    .fData {
+        font-size: 14px;
+    }
+    
+    .boton-subir {
+        padding: 8px 12px;
+        font-size: 20px;
+    }
+}
+
+/* Móviles pequeños (320px - 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2, h3 {
+        font-size: 1.1em;
+        margin-top: 20px;
+    }
+    
+    .header {
+        padding: 10px 5px 5% 5%;
+    }
+    
+    .hInicio {
+        margin-bottom: 30px;
+    }
+    
+    .hInicio img {
+        width: 70px;
+    }
+    
+    .hInicio li {
+        font-size: x-small;
+        padding: 6px;
+        min-width: 80px;
+    }
+    
+    .hDetalle img {
+        max-width: 250px;
+    }
+    
+    .hTexto p {
+        font-size: 13px;
+        max-width: 280px;
+    }
+    
+    .cFoText img {
+        width: 180px;
+        height: 110px;
+    }
+    
+    .serv img {
+        width: 180px;
+        height: 110px;
+    }
+    
+    .cFoText p {
+        font-size: 14px;
+        max-width: 280px;
+    }
+    
+    .serv p {
+        font-size: 14px;
+        max-width: 180px;
+    }
+    
+    .cFoText#idcFoText img,
+    .cFoText#idcFoText video {
+        max-width: 280px;
+        height: 200px;
+    }
+    
+    .gallery-container {
+        max-width: 280px;
+        height: 200px;
+    }
+    
     .image-info {
         padding: 15px 10px 8px;
     }
@@ -790,76 +892,209 @@ height: 150px;
     }
     
     .image-info p {
+        font-size: 11px;
+    }
+    
+    .arrow {
+        width: 35px;
+        height: 35px;
         font-size: 12px;
+    }
+    
+    .arrow-prev {
+        left: 10px;
+    }
+    
+    .arrow-next {
+        right: 10px;
+    }
+    
+    .nav-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .navigation {
+        bottom: 15px;
+        gap: 8px;
     }
     
     .galerias {
         font-size: 20px;
-        margin-top: 40px;
+        margin-top: 30px;
     }
     
     .contenedorDeGalerias {
+        padding: 0 5px;
         gap: 15px;
-        padding: 0 10px;
     }
     
-    .iGaleria img {
+    .marcas {
+        margin: 30px 5px;
+        gap: 15px;
+    }
+    
+    #xtremo, #inter {
+        width: 120px;
+    }
+    
+    #vitamsol {
         width: 80px;
-        height: 80px;
     }
     
-    .iGaleria p {
-        max-width: 220px;
-        font-size: 14px;
+    .marcas h4 {
+        font-size: small;
+        padding: 6px;
+    }
+    
+    .pllamada {
+        width: 98%;
+        padding: 10px;
+        gap: 10px;
     }
     
     .pllamada button {
+        height: 35px;
         font-size: medium;
-        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     
     .llamanos {
         font-size: 18px;
-        margin: 25px auto 10px auto;
+        margin: 20px auto 10px auto;
     }
     
-    .boton-subir {
-        bottom: 15px;
-        right: 15px;
-        font-size: 20px;
-        padding: 8px 12px;
-    }
-}
-
-/* Móviles muy pequeños (hasta 400px) */
-@media screen and (max-width: 400px) {
-    .gallery-container {
-        width: 220px;
-        height: 180px;
+    footer {
+        margin-top: 40px;
+        gap: 15px;
     }
     
-    .cFoText img {
-        width: 160px;
+    .fRedes, .fDatos, .experiencia {
+        padding: 10px;
+    }
+    
+    .experiencia img {
+        width: 100px;
         height: 100px;
     }
     
-    .cFoText#idcFoText img,
-    .cFoText#idcFoText video {
-        max-width: 220px;
-        height: 160px;
+    .fRimglogo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .fRimgRed {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .dContacto {
+        font-size: 18px;
+    }
+    
+    .dMail {
+        font-size: 14px;
+    }
+    
+    .fData {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    .social {
+        gap: 5px;
+    }
+    
+    .boton-subir {
+        padding: 6px 10px;
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Móviles muy pequeños (menos de 320px) */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.3em;
+    }
+    
+    .header {
+        padding: 8px 3px 5% 3%;
+    }
+    
+    .hInicio img {
+        width: 60px;
+    }
+    
+    .hInicio li {
+        font-size: xx-small;
+        padding: 4px;
+        min-width: 70px;
     }
     
     .hDetalle img {
         max-width: 200px;
     }
     
-        
-    .pllamada {
-        width: 98%;
-        padding: 10px;
+    .hTexto p {
+        font-size: 12px;
+        max-width: 240px;
+    }
+    
+    .cFoText img,
+    .serv img {
+        width: 150px;
+        height: 90px;
+    }
+    
+    .cFoText p,
+    .serv p {
+        font-size: 13px;
+        max-width: 200px;
+    }
+    
+    .cFoText#idcFoText img,
+    .cFoText#idcFoText video {
+        max-width: 240px;
+        height: 180px;
+    }
+    
+    .gallery-container {
+        max-width: 240px;
+        height: 180px;
     }
     
     .galerias {
         font-size: 18px;
+    }
+    
+    #xtremo, #inter {
+        width: 100px;
+    }
+    
+    #vitamsol {
+        width: 70px;
+    }
+    
+    .llamanos {
+        font-size: 16px;
+    }
+    
+    .pllamada button {
+        font-size: small;
+    }
+    
+    .dContacto {
+        font-size: 16px;
+    }
+    
+    .dMail {
+        font-size: 13px;
+    }
+    
+    .fData {
+        font-size: 12px;
     }
 }
