@@ -15,8 +15,10 @@ function showImage(galleryId, imageNumber) {
     const dots = gallery.querySelectorAll('.nav-dot');
             
     // Calcular el porcentaje de desplazamiento
-    const translateX = -(imageNumber - 1) * (100 / galleryStates[galleryId].totalImages);
-    wrapper.style.transform = `translateX(${translateX}%)`;
+    //const translateX = -(imageNumber - 1) * (100 / galleryStates[galleryId].totalImages);    
+    const translateX = -(imageNumber - 1) * 14.28;
+    wrapper.style.transform = `translateX(${translateX}%)`;    
+
             
     // Actualizar dots
     dots.forEach((dot, index) => {
