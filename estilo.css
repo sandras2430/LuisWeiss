@@ -129,7 +129,13 @@ a {
     text-align: center;
     color: #1f2937;
 }
-
+#quincho-video, #termotanque-video{
+        cursor:pointer;
+    }
+#quincho-video:hover, #termotanque-video:hover { 
+  transform: scale(1.05); 
+  opacity: 0.9; 
+}
 .serv p {
     width: 250px;
     height: auto;

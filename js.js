@@ -73,4 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
   miniatura.addEventListener('click', () => {
     miniatura.outerHTML = '<video controls autoplay><source src=./videos/Intert7.mp4 type=video/mp4></video>';
   });
+
+  const miniaturaT = document.getElementById('termotanque-video');
+
+  miniaturaT.addEventListener('click', () => {
+    miniaturaT.outerHTML = '<video controls autoplay><source src=./videos/termotanquesolar.mp4 type=video/mp4></video>';
+  });
 });
