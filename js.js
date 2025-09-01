@@ -70,6 +70,7 @@ function addGallery(galleryId, totalImages) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
   const miniatura = document.getElementById('quincho-video');
 
   miniatura.addEventListener('click', () => {
