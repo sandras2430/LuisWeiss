@@ -79,4 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
   miniaturaT.addEventListener('click', () => {
     miniaturaT.outerHTML = '<video controls autoplay><source src=./videos/termotanquesolar.mp4 type=video/mp4></video>';
   });
+
+  const miniaturaY = document.getElementById('yeso-video');
+
+  miniaturaY.addEventListener('click', () => {
+    miniaturaY.outerHTML = '<video controls autoplay><source src=./videos/yeso.mp4 type=video/mp4></video>';
+  });
+
+  const miniaturaI = document.getElementById('int2-video');
+
+  miniaturaI.addEventListener('click', () => {
+    miniaturaI.outerHTML = '<video controls autoplay><source src=./videos/Intert2.mp4 type=video/mp4></video>';
+  });
 });
