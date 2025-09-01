@@ -5,7 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <meta http-equiv="X-Frame-Options" content="DENY">
-        <meta http-equiv="X-Content-Type-Options" content="nosniff">           
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  img-src 'self' data:;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  script-src 'self' 'unsafe-inline' https://vjs.zencdn.net;
+">
+
         <script src="js.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
@@ -27,7 +35,7 @@
             <div class="hDetalle">
                 <div class="hTexto">
                     <h1>Soluciones y Servicios Integrales de la Construccion</h1>                        
-                    <p>Desde hace mas de 25 años nos especializamos en la instalación 
+                    <p>Desde hace mas de 30 años nos especializamos en la instalación 
                         de aires acondicionados, 
                         termotanques solares, climatización de piscinas,
                         construcción y mantenimiento de obras. Ofrecemos servicios 
