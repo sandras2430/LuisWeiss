@@ -8,7 +8,7 @@ html {
 
 h1 {
     color: aliceblue;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 0;    
 }
 
@@ -16,17 +16,16 @@ h2,
 h3 {
     text-align: center;
     color: #1f2937;
-    margin-top: 50px;
+    margin-top: 0.7rem;
 }
 
 a {
     text-decoration: none;
 }
 
-/* Header */
+/* Header - FORMATO ORIGINAL para pantallas grandes */
 .header {
-    padding: 10px;
-    padding: 30px 30px 5% 20%;
+    padding: 2% 5% 3% 5%;
     display: block;
     background-color: #1f2937;
     height: auto;
@@ -35,7 +34,8 @@ a {
 .hInicio {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 3%;
+    align-items: center;
 }
 
 .hInicio img {
@@ -52,7 +52,8 @@ a {
 .hInicio ul {
     display: flex;
     font-size: medium;
-    /*gap: 5px;*/
+    margin: 0;
+    padding: 0;
 }
 
 .hInicio li {
@@ -63,7 +64,6 @@ a {
     height: auto;
     padding: 10px;
     border-radius: 10px;
-    gap: 15px;
 }
 
 .hInicio li:hover {
@@ -74,11 +74,11 @@ a {
 
 .hDetalle {
     display: flex;
-    gap: 20px;
+    gap: 4%;
 }
 
 .hDetalle img {
-    width: 450px;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }
@@ -88,17 +88,17 @@ a {
 }
 
 .hTexto p {
-    width: 400px;
+    width: 100%;
     color: #e5e7eb;
     text-align: justify;
     margin: 0;
 }
 
-/* Sección de Fotos (cFotos) */
+/* Sección de Fotos (cFotos) - FORMATO ORIGINAL */
 .cFotos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2%;
 }
 
 .cFotos#desborde {
@@ -109,16 +109,17 @@ a {
     flex-direction: column;
 }
 
-.cFoText img
- {
+.cFoText img {
     width: 250px;
     height: 150px;
     object-fit: cover;
 }
-.serv img{
-    border-radius: 5%;    
+
+.serv img {
+    border-radius: 5%;
 }
-.serv{
+
+.serv {
     margin: auto;
 }
 
@@ -128,7 +129,8 @@ a {
     text-align: center;
     color: #1f2937;
 }
-.serv p{
+
+.serv p {
     width: 250px;
     height: auto;
     text-align: center;
@@ -141,175 +143,172 @@ a {
     object-fit: cover;
 }
 
-/* Galería */
-        .gallery-container {
-            width: 500px;
-            height: 400px;
-            position: relative;    
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            background: #fff;
-            /*margin: 30px auto;*/
-            
-        }
+/* Galería - FORMATO ORIGINAL */
+.gallery-container {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
 
-        .gallery-container input[type="radio"] {
-            display: none;
-        }
+.gallery-container input[type="radio"] {
+    display: none;
+}
 
-        .images-wrapper {
-            width: 700%; /* 7 imágenes = 700% */
-            height: 100%;
-            display: flex;
-            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
+.images-wrapper {
+    width: 700%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
-        .image-slide {
-            width: 14.28%; /* 100% / 7 imágenes */
-            height: 100%;
-            position: relative;
-            flex-shrink: 0;
-        }
+.image-slide {
+    width: 14.28%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
 
-        .image-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+.image-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-        .image-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-            color: white;
-            padding: 30px 20px 15px;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
+.image-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 30px 20px 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
 
-        .image-slide:hover .image-info {
-            transform: translateY(0);
-        }
+.image-slide:hover .image-info {
+    transform: translateY(0);
+}
 
-        .image-info h3 {
-            margin: 0 0 5px 0;
-            font-size: 18px;
-            font-weight: bold;
-        }
+.image-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-        .image-info p {
-            margin: 0;
-            font-size: 14px;
-            opacity: 0.9;
-        }
+.image-info p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
 
-        .navigation {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 12px;
-            z-index: 10;
-        }
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
 
-        .nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
 
-        .nav-dot:hover {
-            background: rgba(255, 255, 255, 0.8);
-            transform: scale(1.1);
-        }
+.nav-dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
 
-        .nav-dot.active {
-            background: #fff;
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: scale(1.2);
-        }
+.nav-dot.active {
+    background: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.2);
+}
 
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            font-size: 18px;
-            cursor: pointer;
-            opacity: 0;
-            transition: all 0.3s ease;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .gallery-container:hover .arrow {
-            opacity: 1;
-        }
+.gallery-container:hover .arrow {
+    opacity: 1;
+}
 
-        .arrow:hover {
-            background: rgba(0, 0, 0, 0.8);
-            transform: translateY(-50%) scale(1.1);
-        }
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
 
-        .arrow-prev {
-            left: 15px;
-        }
+.arrow-prev {
+    left: 15px;
+}
 
-        .arrow-next {
-            right: 15px;
-        }
+.arrow-next {
+    right: 15px;
+}
 
-        .gallery-title {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
-            font-size: 28px;
-            font-weight: 300;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
+.gallery-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-        .section-title {
-            text-align: center;
-            color: #0f095c;
-            margin: 10px 0 10px 0;
-            font-size:small;          
-        }
-        .galerias{
-            color: #0f095c;
-            font-weight: bolder;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            font-size: 35px;
-            margin-top: 100px;
-        }
-        .contenedorDeGalerias{
-            display: flex;
-            justify-content:center;
-            align-items: flex-start;
-            gap: 30px;
-            flex-wrap: wrap;   
-            width: 100%;
-            
-            
-        }
-/*termina galeria*/
+.section-title {
+    text-align: center;
+    color: #0f095c;
+    margin: 10px 0 10px 0;
+    font-size: small;
+}
 
-/* Marcas */
+.galerias {
+    color: #0f095c;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.contenedorDeGalerias {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Marcas - FORMATO ORIGINAL */
 .marcas {
     display: flex;
     margin: 100px 70px 100px 20px;
@@ -369,11 +368,9 @@ a {
     background-color: #555;
 }
 
-
-
-/* Llamada a la acción */
+/* Llamada a la acción - FORMATO ORIGINAL */
 .pllamada {
-    width: 600px;    
+    width: 600px;
     background-color: #3882f6;
     color: #e5e7e9;
     border-radius: 10px;
@@ -382,31 +379,32 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    font-weight:900;
-       
+    font-weight: 900;
 }
+
 .pllamada button {
-    background-color: #3882f6;       
+    background-color: #3882f6;
     color: #e5e7e9;
     width: 300px;
-    height: 50px;    
+    height: 50px;
     margin-bottom: 15px;
     font-size: xx-large;
     border: 2px solid #e5e7eb;
     border-radius: 10px;
     font-weight: bolder;
-    margin-top: 20px;    
+    margin-top: 20px;
 }
-.llamanos{
+
+.llamanos {
     margin: 50px auto 10px auto;
     text-align: center;
     color: #0f095c;
-    font-family: 'Robot',sans-serif;    
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 28px;
 }
 
-/* Footer */
+/* Footer - FORMATO ORIGINAL */
 footer {
     background-color: #1f2937;
     color: #e5e7e9;
@@ -415,163 +413,151 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.fRedes, .fDatos, .experiencia{
+
+.fRedes, .fDatos, .experiencia {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;    
-    
+    height: 300px;
 }
-.experiencia img{
-width: 150px;
-height: 150px;
+
+.experiencia img {
+    width: 150px;
+    height: 150px;
 }
-.fRedes p{
+
+.fRedes p {
     margin-left: 10px;
 }
-.fRedes{
+
+.fRedes {
     margin-left: 100px;
 }
-.fDatos{
+
+.fDatos {
     margin-right: 100px;
 }
 
-
-.fRimglogo{
+.fRimglogo {
     width: 100px;
     height: 100px;
     margin-bottom: 5px;
 }
-.fRimgRed{
+
+.fRimgRed {
     width: 30px;
     height: 30px;
-    
 }
-.dMail{
+
+.dMail {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;    
+    font-size: 20px;
     margin: 0;
     padding-top: 0;
 }
-.dContacto{
+
+.dContacto {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 28px;    
+    font-size: 28px;
     border-bottom: 1px solid #e5e7e9;
 }
-.fData{
-    font-family:'Times New Roman', Times, serif;
+
+.fData {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: space-between;
-    gap: 10px;    
+    gap: 10px;
 }
+
 .social svg {
-  fill: #FFFFFF;  /* Por ejemplo, blanco */
-  
+    fill: #FFFFFF;
 }
 
-/* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
-
-/* Tablets grandes y pantallas medianas (1024px - 1200px) */
-@media screen and (max-width: 1200px) {
-    .header {
-        padding: 20px 20px 5% 15%;
-    }
-    
-    .hDetalle {
-        gap: 15px;
-    }
-    
-    .hDetalle img {
-        width: 350px;
-    }
-    
-    .hTexto p {
-        width: 300px;
-    }
-    
-    .marcas {
-        margin: 80px 50px 80px 15px;
-    }
-    
-    #xtremo, #inter {
-        width: 250px;
-    }
-    
-    .pllamada {
-        width: 500px;
-    }
-    
-    .pllamada button {
-        width: 250px;
-        font-size: x-large;
-    }
-    
-    .fRedes {
-        margin-left: 50px;
-    }
-    
-    .fDatos {
-        margin-right: 50px;
-    }
-}
+/* ===== MEDIA QUERIES - SOLO PARA DISPOSITIVOS PEQUEÑOS ===== */
 
 /* Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
-    h1 {
-        font-size: 2em;
-    }
-    
+    /* Header centrado y optimizado */
     .header {
-        padding: 20px 15px 5% 10%;
+        padding: 1.5% 3% 2% 3%;
     }
     
     .hInicio {
         flex-direction: column;
-        gap: 20px;
-        margin-bottom: 40px;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hInicio img {
+        width: 90px;
+        min-width: 80px;
+        margin: 0 auto;
     }
     
     .hInicio ul {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 1rem;
     }
     
     .hInicio li {
         width: auto;
         min-width: 120px;
-        margin: 5px;
     }
     
     .hDetalle {
         flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        align-items: center;
+        gap: 1.5rem;
     }
     
     .hDetalle img {
-        width: 100%;
+        width: 80%;
         max-width: 400px;
     }
     
+    .hTexto {
+        text-align: center;
+    }
+    
     .hTexto p {
-        width: 100%;
         max-width: 500px;
         margin: 0 auto;
+    }
+    
+    /* Fotos en columnas centradas */
+    .cFotos {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .cFoText {
+        display: flex;
+        align-items: center;
     }
     
     .cFoText p {
         width: 100%;
         max-width: 400px;
+    }
+    
+    .serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .serv p {
@@ -581,20 +567,138 @@ height: 150px;
     
     .cFoText#idcFoText img,
     .cFoText#idcFoText video {
-        width: 100%;
+        width: 90%;
         max-width: 400px;
         height: 300px;
     }
     
+    /* Galería responsive */
     .gallery-container {
-        width: 100%;
+        width: 90%;
         max-width: 400px;
         height: 300px;
+        margin: 0 auto;
     }
     
     .contenedorDeGalerias {
-        gap: 20px;
-        padding: 0 15px;
+        padding: 0 1rem;
+    }
+    
+    /* Marcas centradas */
+    .marcas {
+        flex-direction: column;
+        margin: 60px 20px;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    #xtremo, #inter {
+        width: 250px;
+        max-width: 90%;
+    }
+    
+    #vitamsol {
+        width: 120px;
+        min-width: 100px;
+    }
+    
+    /* Footer centrado */
+    footer {
+        height: auto;
+        min-height: 300px;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .fRedes, .fDatos, .experiencia {
+        height: auto;
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .experiencia img {
+        width: 120px;
+        height: 120px;
+        min-width: 100px;
+    }
+    
+    .fRimglogo {
+        width: 80px;
+        height: 80px;
+        min-width: 70px;
+    }
+    
+    .pllamada {
+        width: 90%;
+        max-width: 500px;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .pllamada button {
+        width: 100%;
+        max-width: 300px;
+        font-size: large;
+    }
+}
+
+/* Móviles grandes (480px - 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .header {
+        padding: 1rem 2% 1.5% 2%;
+    }
+    
+    .hInicio img {
+        width: 80px;
+        min-width: 70px;
+    }
+    
+    .hInicio li {
+        min-width: 100px;
+        font-size: small;
+        padding: 8px;
+    }
+    
+    .hDetalle img {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .hTexto p {
+        font-size: 14px;
+        max-width: 400px;
+    }
+    
+    .cFoText img,
+    .serv img {
+        width: 220px;
+        height: 130px;
+        min-width: 200px;
+    }
+    
+    .cFoText#idcFoText img,
+    .cFoText#idcFoText video {
+        max-width: 350px;
+        height: 250px;
+    }
+    
+    .gallery-container {
+        max-width: 350px;
+        height: 250px;
+    }
+    
+    .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
     
     .galerias {
@@ -602,118 +706,107 @@ height: 150px;
         margin-top: 60px;
     }
     
-    .marcas {
-        flex-direction: column;
-        margin: 60px 20px;
-        gap: 30px;
-        text-align: center;
-    }
-    
     #xtremo, #inter {
         width: 200px;
     }
     
     #vitamsol {
-        width: 120px;
-    }
-    
-    .pllamada {
-        width: 90%;
-        max-width: 400px;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-    
-    .pllamada button {
-        width: 100%;
-        max-width: 250px;
+        width: 100px;
+        min-width: 80px;
     }
     
     .llamanos {
-        font-size: 24px;
-        margin: 40px auto 10px auto;
+        font-size: 22px;
     }
     
-    footer {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        gap: 20px;
+    .pllamada button {
+        height: 45px;
+        font-size: medium;
     }
     
-    .fRedes, .fDatos, .experiencia {
-        margin: 0;
-        min-height: auto;
-        padding: 15px;
+    .experiencia img {
+        width: 100px;
+        height: 100px;
+        min-width: 80px;
+    }
+    
+    .fRimglogo {
+        width: 70px;
+        height: 70px;
+        min-width: 60px;
+    }
+    
+    .fRimgRed {
+        width: 25px;
+        height: 25px;
+        min-width: 22px;
     }
     
     .dContacto {
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .dMail {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    
+    .fData {
+        font-size: 14px;
     }
 }
 
-/* Móviles grandes (480px - 768px) */
-@media screen and (max-width: 768px) {
+/* Móviles pequeños (320px - 480px) */
+@media screen and (max-width: 480px) {
     h1 {
-        font-size: 1.8em;
-    }
-    
-    h2, h3 {
-        margin-top: 30px;
-        font-size: 1.3em;
+        font-size: 1.8rem;
     }
     
     .header {
-        padding: 15px 10px 5% 5%;
+        padding: 1rem 1% 1% 1%;
     }
     
     .hInicio img {
-        width: 80px;
+        width: 70px;
+        min-width: 60px;
     }
     
     .hInicio li {
-        font-size: small;
-        padding: 8px;
-        min-width: 100px;
-    }
-    
-    .hDetalle img {
-        max-width: 300px;
+        min-width: 80px;
+        font-size: x-small;
+        padding: 6px;
     }
     
     .hTexto p {
-        font-size: 14px;
-        max-width: 350px;
+        font-size: 13px;
+        max-width: 320px;
     }
     
-    .cFotos {
-        gap: 15px;
-    }
-    
-    .cFoText img {
-        width: 200px;
-        height: 120px;
-    }
-    
+    .cFoText img,
     .serv img {
         width: 200px;
         height: 120px;
+        min-width: 180px;
+    }
+    
+    .cFoText p {
+        max-width: 300px;
+        font-size: 14px;
+    }
+    
+    .serv p {
+        max-width: 200px;
+        font-size: 14px;
     }
     
     .cFoText#idcFoText img,
     .cFoText#idcFoText video {
         max-width: 300px;
-        height: 250px;
+        height: 220px;
     }
     
     .gallery-container {
         max-width: 300px;
-        height: 250px;
+        height: 220px;
     }
     
     .image-info {
@@ -729,8 +822,8 @@ height: 150px;
     }
     
     .arrow {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         font-size: 14px;
     }
     
@@ -744,21 +837,14 @@ height: 150px;
         margin-top: 40px;
     }
     
-    .contenedorDeGalerias {
-        padding: 0 10px;
-    }
-    
-    .marcas {
-        margin: 40px 10px;
-        gap: 20px;
-    }
-    
     #xtremo, #inter {
-        width: 150px;
+        width: 180px;
+        min-width: 150px;
     }
     
     #vitamsol {
-        width: 100px;
+        width: 90px;
+        min-width: 70px;
     }
     
     .marcas h4 {
@@ -766,34 +852,35 @@ height: 150px;
         padding: 8px;
     }
     
+    .llamanos {
+        font-size: 20px;
+    }
+    
     .pllamada {
-        width: 95%;
-        padding: 15px;
+        padding: 1rem;
     }
     
     .pllamada button {
         height: 40px;
-        font-size: large;
-    }
-    
-    .llamanos {
-        font-size: 20px;
-        margin: 30px auto 10px auto;
+        font-size: small;
     }
     
     .experiencia img {
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
+        min-width: 70px;
     }
     
     .fRimglogo {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
+        min-width: 50px;
     }
     
     .fRimgRed {
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
+        min-width: 20px;
     }
     
     .dContacto {
@@ -801,11 +888,16 @@ height: 150px;
     }
     
     .dMail {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .fData {
-        font-size: 14px;
+        font-size: 13px;
+    }
+    
+    .social svg {
+        width: 22px;
+        height: 22px;
     }
     
     .boton-subir {
@@ -814,280 +906,88 @@ height: 150px;
     }
 }
 
-/* Móviles pequeños (320px - 480px) */
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
-    
-    h2, h3 {
-        font-size: 1.1em;
-        margin-top: 20px;
-    }
-    
-    .header {
-        padding: 10px 5px 5% 5%;
-    }
-    
-    .hInicio {
-        margin-bottom: 30px;
-    }
-    
-    .hInicio img {
-        width: 70px;
-    }
-    
-    .hInicio li {
-        font-size: x-small;
-        padding: 6px;
-        min-width: 80px;
-    }
-    
-    .hDetalle img {
-        max-width: 250px;
-    }
-    
-    .hTexto p {
-        font-size: 13px;
-        max-width: 280px;
-    }
-    
-    .cFoText img {
-        width: 180px;
-        height: 110px;
-    }
-    
-    .serv img {
-        width: 180px;
-        height: 110px;
-    }
-    
-    .cFoText p {
-        font-size: 14px;
-        max-width: 280px;
-    }
-    
-    .serv p {
-        font-size: 14px;
-        max-width: 180px;
-    }
-    
-    .cFoText#idcFoText img,
-    .cFoText#idcFoText video {
-        max-width: 280px;
-        height: 200px;
-    }
-    
-    .gallery-container {
-        max-width: 280px;
-        height: 200px;
-    }
-    
-    .image-info {
-        padding: 15px 10px 8px;
-    }
-    
-    .image-info h3 {
-        font-size: 14px;
-    }
-    
-    .image-info p {
-        font-size: 11px;
-    }
-    
-    .arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 12px;
-    }
-    
-    .arrow-prev {
-        left: 10px;
-    }
-    
-    .arrow-next {
-        right: 10px;
-    }
-    
-    .nav-dot {
-        width: 8px;
-        height: 8px;
-    }
-    
-    .navigation {
-        bottom: 15px;
-        gap: 8px;
-    }
-    
-    .galerias {
-        font-size: 20px;
-        margin-top: 30px;
-    }
-    
-    .contenedorDeGalerias {
-        padding: 0 5px;
-        gap: 15px;
-    }
-    
-    .marcas {
-        margin: 30px 5px;
-        gap: 15px;
-    }
-    
-    #xtremo, #inter {
-        width: 120px;
-    }
-    
-    #vitamsol {
-        width: 80px;
-    }
-    
-    .marcas h4 {
-        font-size: small;
-        padding: 6px;
-    }
-    
-    .pllamada {
-        width: 98%;
-        padding: 10px;
-        gap: 10px;
-    }
-    
-    .pllamada button {
-        height: 35px;
-        font-size: medium;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
-    .llamanos {
-        font-size: 18px;
-        margin: 20px auto 10px auto;
-    }
-    
-    footer {
-        margin-top: 40px;
-        gap: 15px;
-    }
-    
-    .fRedes, .fDatos, .experiencia {
-        padding: 10px;
-    }
-    
-    .experiencia img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .fRimglogo {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .fRimgRed {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .dContacto {
-        font-size: 18px;
-    }
-    
-    .dMail {
-        font-size: 14px;
-    }
-    
-    .fData {
-        font-size: 13px;
-        margin-bottom: 15px;
-    }
-    
-    .social {
-        gap: 5px;
-    }
-    
-    .boton-subir {
-        padding: 6px 10px;
-        font-size: 18px;
-        bottom: 15px;
-        right: 15px;
-    }
-}
-
 /* Móviles muy pequeños (menos de 320px) */
 @media screen and (max-width: 320px) {
     h1 {
-        font-size: 1.3em;
+        font-size: 1.5rem;
     }
     
     .header {
-        padding: 8px 3px 5% 3%;
+        padding: 0.5rem 1% 1% 1%;
     }
     
     .hInicio img {
         width: 60px;
+        min-width: 50px;
     }
     
     .hInicio li {
+        min-width: 70px;
         font-size: xx-small;
         padding: 4px;
-        min-width: 70px;
-    }
-    
-    .hDetalle img {
-        max-width: 200px;
-    }
-    
-    .hTexto p {
-        font-size: 12px;
-        max-width: 240px;
     }
     
     .cFoText img,
     .serv img {
-        width: 150px;
-        height: 90px;
+        width: 180px;
+        height: 110px;
+        min-width: 160px;
     }
     
     .cFoText p,
     .serv p {
+        max-width: 250px;
         font-size: 13px;
-        max-width: 200px;
     }
     
     .cFoText#idcFoText img,
     .cFoText#idcFoText video {
-        max-width: 240px;
-        height: 180px;
+        max-width: 280px;
+        height: 200px;
     }
     
     .gallery-container {
-        max-width: 240px;
-        height: 180px;
+        max-width: 280px;
+        height: 200px;
     }
     
     .galerias {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     #xtremo, #inter {
-        width: 100px;
+        width: 160px;
+        min-width: 130px;
     }
     
     #vitamsol {
-        width: 70px;
+        width: 80px;
+        min-width: 60px;
     }
     
     .llamanos {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .pllamada button {
-        font-size: small;
+        height: 35px;
+        font-size: x-small;
+    }
+    
+    .experiencia img {
+        width: 80px;
+        height: 80px;
+        min-width: 60px;
+    }
+    
+    .fRimglogo {
+        width: 50px;
+        height: 50px;
+        min-width: 40px;
     }
     
     .dContacto {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .dMail {
