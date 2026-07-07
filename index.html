@@ -14,35 +14,70 @@
   script-src 'self' 'unsafe-inline' https://vjs.zencdn.net;
 ">
 
-        <script src="js.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
-        <link rel="stylesheet" href="estilo.css">                
+        <link rel="stylesheet" href="assets/css/estilo.css">
         <title>Soluciones para tu Edificio y Hogar Luis Weiss</title>
-        <link rel="icon" href="logo.png">
+        <link rel="icon" type="image/png" href="assets/img/logo.png">
+        <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+        <meta name="description" content="Luis Weiss - Maestro Mayor de Obra en Santa Fe. Más de 30 años en instalación de aires acondicionados, termotanques solares, climatización de piscinas, construcción y mantenimiento de edificios y hogares.">
+        <link rel="canonical" href="https://luisweissservicios.casa/">
+        <meta property="og:title" content="Luis Weiss - Soluciones y Servicios Integrales de la Construcción">
+        <meta property="og:description" content="Instalación de aires acondicionados, termotanques solares, climatización de piscinas y construcción en Santa Fe. Más de 30 años de experiencia.">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="es_AR">
+        <meta property="og:url" content="https://luisweissservicios.casa/">
+        <meta property="og:image" content="https://luisweissservicios.casa/assets/img/hero-hogar.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Luis Weiss - Soluciones y Servicios Integrales de la Construcción">
+        <meta name="twitter:description" content="Más de 30 años instalando aires acondicionados, termotanques solares y climatización de piscinas en Santa Fe.">
+        <meta name="twitter:image" content="https://luisweissservicios.casa/assets/img/hero-hogar.jpg">
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "name": "Luis Weiss - Soluciones y Servicios Integrales de la Construcción",
+          "image": "https://luisweissservicios.casa/assets/img/hero-hogar.jpg",
+          "telephone": "+543425012784",
+          "email": "laweiss67@gmail.com",
+          "url": "https://luisweissservicios.casa/",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Fe",
+            "addressRegion": "Santa Fe",
+            "addressCountry": "AR"
+          },
+          "sameAs": [
+            "https://www.instagram.com/lw_obrasyservicios/",
+            "https://wa.me/3425012784"
+          ]
+        }
+        </script>
+
+        <script src="assets/js/js.js" defer></script>
     </head>
     <body>
-        <div class="top"></div>
+        <div class="top" id="top"></div>
         <div class="header">
-            <div class="hInicio">                
-                <a href="#"><img src="logoP.png" alt="Logo"></a>
+            <div class="hInicio">
+                <a href="#"><img src="assets/img/logo-header.png" alt="Logo Luis Weiss" width="500" height="500"></a>
                 <ul>
-                  <a href="#servicios"><li>Nuestros Servicios</li> </a>
-                  <a href="#proyectos"><li>Proyectos Concluidos</li></a>
-                  <a href="#contacto"><li>Contacto</li></a>
+                  <li><a href="#servicios">Nuestros Servicios</a></li>
+                  <li><a href="#proyectos">Proyectos Concluidos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
             <div class="hDetalle">
                 <div class="hTexto">
-                    <h1>Soluciones y Servicios Integrales de la Construccion</h1>                        
-                    <p>Desde hace mas de 30 años nos especializamos en la instalación 
-                        de aires acondicionados, 
+                    <h1>Soluciones y Servicios Integrales de la Construccion</h1>
+                    <p>Desde hace mas de 30 años nos especializamos en la instalación
+                        de aires acondicionados,
                         termotanques solares, climatización de piscinas,
-                        construcción y mantenimiento de obras. Ofrecemos servicios 
+                        construcción y mantenimiento de obras. Ofrecemos servicios
                         completos y  preventivo para particulares y edificios.
-                    </p>                        
+                    </p>
                 </div>
-                <img src="hogar.jpg" alt="Hogar">
+                <img src="assets/img/hero-hogar.jpg" alt="Fachada de hogar, ejemplo de obra terminada por Luis Weiss" width="1280" height="670" fetchpriority="high">
             </div>
         </div>
         
@@ -50,151 +85,161 @@
         <h2 id="servicios">Servicios que realizamos</h2>
         <div class="cFotos">
             <div class="cFoText serv">
-                <img src="./aire.png" alt="Aire Acondicionado">
+                <img src="assets/img/servicios/aire-acondicionado.png" alt="Instalación de aire acondicionado" width="1280" height="768" loading="lazy" decoding="async">
                 <p>Instalacion de Aires Condicionados.</p>
             </div>
             <div class="cFoText serv">
-                <img src="./termotanque.avif" alt="Termotanque solar">
+                <img src="assets/img/servicios/termotanque-solar.avif" alt="Termotanque solar" width="870" height="580" loading="lazy" decoding="async">
                 <p>Instalacion de Termotanques Solares.</p>
             </div>
             <div class="cFoText serv">
-                <img src="./piscina.jpg" alt="Piscina">
+                <img src="assets/img/servicios/piscina.jpg" alt="Piscina climatizada" width="4032" height="3024" loading="lazy" decoding="async">
                 <p>Climatizacion de Piscinas.</p>
             </div>
             <div class="cFoText serv">
-                <img src="./construccion.avif" alt="Contrucciones">
-                <p>Refaccion, Ampliacion y Mantenimiento del Hogar.</p>            
+                <img src="assets/img/servicios/construccion.avif" alt="Obra de construcción" width="1033" height="580" loading="lazy" decoding="async">
+                <p>Refaccion, Ampliacion y Mantenimiento del Hogar.</p>
             </div>
         </div>
-        
+
         <div class="marcas">
-            <h4>Marcas que nos avalan</h4>
-            <img src="logoIntertower.png" alt="Hoteles Intertower" id="inter">
-            <img src="logoExtremo.png" alt="Local Xtremo" id="xtremo">            
-            <img src="logoVitamsol.png" alt="Dietetica Vitamsol" id="vitamsol">
+            <h2>Marcas que nos avalan</h2>
+            <img src="assets/img/marcas/logo-intertower.png" alt="Hoteles Intertower" id="inter" width="602" height="370" loading="lazy" decoding="async">
+            <img src="assets/img/marcas/logo-extremo.png" alt="Local Xtremo" id="xtremo" width="400" height="400" loading="lazy" decoding="async">
+            <img src="assets/img/marcas/logo-vitamsol.png" alt="Dietetica Vitamsol" id="vitamsol" width="150" height="150" loading="lazy" decoding="async">
         </div>
-        <h3 id="proyectos">Proyectos Concluidos</h3>
+        <h2 id="proyectos">Proyectos Concluidos</h2>
         <div class="cFotos" id="desborde">
             <div class="cFoText" id="idcFoText">
-                <img src="./fotos/Quincho Santo Tome.jfif" alt="Quincho">
-                <p>Puesta en valor cochera-quincho, revistiendo paredes 
+                <img src="assets/img/proyectos/quincho-santo-tome.jfif" alt="Quincho revestido en Santo Tomé" width="900" height="1600" loading="lazy" decoding="async">
+                <p>Puesta en valor cochera-quincho, revistiendo paredes
                     con placas de yeso, y sobre estas revestimiento texturado</p>
             </div>
-            <div class="cFoText" id="idcFoText">                
-                <!--<video src="./videos/Intert7.mp4" controls ></video>-->
-                <img src="./fotos/videoImagen.png" id="quincho-video">
-                <p>Salon comedor Hotel Intertower, 
-                    cielorraso de placas acusticas</p>
-            </div>            
             <div class="cFoText" id="idcFoText">
-                <img src="./fotos/Vivienda familiar Santa Rosa.jfif" alt="Vivienda">
+                <button type="button" id="quincho-video" class="video-trigger" aria-label="Reproducir video: salón comedor Hotel Intertower">
+                    <img src="assets/img/proyectos/video-thumbnail.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+                </button>
+                <p>Salon comedor Hotel Intertower,
+                    cielorraso de placas acusticas</p>
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <img src="assets/img/proyectos/vivienda-santa-rosa.jfif" alt="Monoambiente terminado en Santa Fe ciudad" width="640" height="480" loading="lazy" decoding="async">
                 <p>Monoambiente terminado, Santa Fe ciudad.</p>
             </div>
-            <div class="cFoText" id="idcFoText">                
-                <!--<video src="./videos/termotanquesolar.mp4" controls ></video>-->
-                <img src="./fotos/videoImagen.png" id="termotanque-video">
+            <div class="cFoText" id="idcFoText">
+                <button type="button" id="termotanque-video" class="video-trigger" aria-label="Reproducir video: termotanques solares instalados en dos monoambientes">
+                    <img src="assets/img/proyectos/video-thumbnail.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+                </button>
                 <p>Termotanques solares instalados en dos monoambientes.
                     Santa Fe ciudad </p>
             </div>
             <div class="cFoText" id="idcFoText">
-                <img src="./fotos/Taller de Costura Colastine.jfif" alt="Taller">
+                <button type="button" id="termotanque2-video" class="video-trigger" aria-label="Reproducir video: instalación de termotanque solar">
+                    <img src="assets/img/proyectos/video-thumbnail.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+                </button>
+                <p>Instalación de termotanque solar. Trabajo reciente.</p>
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <img src="assets/img/proyectos/taller-costura-colastine.jfif" alt="Taller de costura en Colastiné" width="1600" height="1200" loading="lazy" decoding="async">
                 <p>Salon taller de costura, cielorraso desmontable,
                     piso porcelanato, aberturas de aluminio.
                 </p>
-            </div>            
-            <div class="cFoText" id="idcFoText">                
-                <!--<video src="./videos/yeso.mp4" controls ></video>-->
-                <img src="./fotos/videoImagen.png" id="yeso-video">
+            </div>
+            <div class="cFoText" id="idcFoText">
+                <button type="button" id="yeso-video" class="video-trigger" aria-label="Reproducir video: obra Santo Tomé, cochera-quincho con placas de yeso">
+                    <img src="assets/img/proyectos/video-thumbnail.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+                </button>
                 <p>Obra Santo Tome, cochera-quincho, colocacion de placas de yeso
-                    y armado de cajones en reestructuracion de asador, todo revestido 
+                    y armado de cajones en reestructuracion de asador, todo revestido
                     con texturado plastico.
                 </p>
             </div>
-            <div class="cFoText" id="idcFoText">                
-                <!--<video src="./videos/Intert2.mp4" controls ></video>-->
-                <img src="./fotos/videoImagen.png" id="int2-video">
-                <p>Intervencion en terraza Hotel Intertower Santa Fe, piso de 
+            <div class="cFoText" id="idcFoText">
+                <button type="button" id="int2-video" class="video-trigger" aria-label="Reproducir video: intervención en terraza Hotel Intertower">
+                    <img src="assets/img/proyectos/video-thumbnail.png" alt="" width="500" height="500" loading="lazy" decoding="async">
+                </button>
+                <p>Intervencion en terraza Hotel Intertower Santa Fe, piso de
                     porcelanato simil madera, asientos de material revestidos con microcemento,
                     deck sintetico en yacuzzi.
 
                 </p>
             </div>
             <div class="cFoText" id="idcFoText">
-                <img src="./fotos/Intertower terraza 3.jfif" alt="Intertower">
+                <img src="assets/img/proyectos/intertower-terraza-3.jfif" alt="Jardín vertical en Hotel Intertower" width="1600" height="720" loading="lazy" decoding="async">
                 <p>Hotel Intertower, jardin vertical en zona solarium y yacuzzi.</p>
             </div>
             <div class="cFoText" id="idcFoText">
-                <img src="./fotos/termotanqueSolar.jfif" alt="Termotanque">
+                <img src="assets/img/proyectos/termotanque-solar-instalado.jfif" alt="Termotanque solar en barrio privado El Faro" width="1600" height="1200" loading="lazy" decoding="async">
                 <p>Barrio privado El Faro Santa Rosa de Calchines,
-                    instalacion de termotqanque solar de 300 l, 
+                    instalacion de termotqanque solar de 300 l,
                     compartido por dos cabanas.
                 </p>
-            </div>                        
+            </div>
             <div class="cFoText" id="idcFoText">
-                <img src="./fotos/santaRosa.jpeg" alt="Vivienda">
+                <img src="assets/img/proyectos/santa-rosa-fachada.jpeg" alt="Fachada de vivienda unifamiliar en Santa Rosa de Calchines" width="1296" height="972" loading="lazy" decoding="async">
                 <p>Fachada vivienda unifamiliar en Ruta 1
                     Santa Rosa de Calchines.
-            
+
                 </p>
             </div>
-        </div>        
+        </div>
 
             <!--area galerias-->
-            <h3 class="galerias">Galerias</h3>
+            <h2 class="galerias">Galerias</h2>
             
     <!-- Primera Galería -->
      <div class="contenedorDeGalerias">
 
         <div class="gallery-container" data-gallery-id="gallery1">
-            <h2 class="section-title">Construccion monoambiente Santa Fe Ciudad.</h2>
+            <h3 class="section-title">Construccion monoambiente Santa Fe Ciudad.</h3>
             <!-- Container de imágenes -->
             <div class="images-wrapper">
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto1.jpg" alt="Monoambiente">
+                    <img src="assets/img/galeria-monoambiente/foto1.jpg" alt="Vista general del monoambiente terminado" width="972" height="972" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 1</h3>
+                        <h4>Galería Principal - Foto 1</h4>
                         <p>Primera imagen de la galería principal</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto2.jpg" alt="Monoambiente">        >
+                    <img src="assets/img/galeria-monoambiente/foto2.jpg" alt="Detalle de terminaciones del monoambiente" width="720" height="720" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 2</h3>
+                        <h4>Galería Principal - Foto 2</h4>
                         <p>Segunda imagen de la galería principal</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto3.jpg" alt="Monoambiente">
+                    <img src="assets/img/galeria-monoambiente/foto3.jpg" alt="Vista lateral del monoambiente" width="480" height="480" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 3</h3>
+                        <h4>Galería Principal - Foto 3</h4>
                         <p>Tercera imagen de la galería principal</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto4.jpg" alt="Monoambiente">
+                    <img src="assets/img/galeria-monoambiente/foto4.jpg" alt="Interior del monoambiente en etapa final" width="480" height="480" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 4</h3>
+                        <h4>Galería Principal - Foto 4</h4>
                         <p>Cuarta imagen de la galería principal</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto5.jpg" alt="Monoambiente">
+                    <img src="assets/img/galeria-monoambiente/foto5.jpg" alt="Detalle de piso y aberturas del monoambiente" width="768" height="768" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 5</h3>
+                        <h4>Galería Principal - Foto 5</h4>
                         <p>Quinta imagen de la galería principal</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto6.jpg" alt="Monoambiente">
+                    <img src="assets/img/galeria-monoambiente/foto6.jpg" alt="Vista del monoambiente desde el ingreso" width="480" height="480" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 6</h3>
+                        <h4>Galería Principal - Foto 6</h4>
                         <p>Sexta imagen de la galería principal</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Monoambiente etapa final/foto7.jpg" alt="Monoambiente">
+                    <img src="assets/img/galeria-monoambiente/foto7.jpg" alt="Vista final del monoambiente terminado" width="480" height="480" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Galería Principal - Foto 7</h3>
+                        <h4>Galería Principal - Foto 7</h4>
                         <p>Séptima imagen de la galería principal</p>
                     </div>
                 </div>
@@ -202,13 +247,13 @@
 
             <!-- Navegación con dots -->
             <div class="navigation">
-                <div class="nav-dot active" onclick="showImage('gallery1', 1)"></div>
-                <div class="nav-dot" onclick="showImage('gallery1', 2)"></div>
-                <div class="nav-dot" onclick="showImage('gallery1', 3)"></div>
-                <div class="nav-dot" onclick="showImage('gallery1', 4)"></div>
-                <div class="nav-dot" onclick="showImage('gallery1', 5)"></div>
-                <div class="nav-dot" onclick="showImage('gallery1', 6)"></div>
-                <div class="nav-dot" onclick="showImage('gallery1', 7)"></div>
+                <button type="button" class="nav-dot active" onclick="showImage('gallery1', 1)" aria-label="Ir a la imagen 1 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('gallery1', 2)" aria-label="Ir a la imagen 2 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('gallery1', 3)" aria-label="Ir a la imagen 3 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('gallery1', 4)" aria-label="Ir a la imagen 4 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('gallery1', 5)" aria-label="Ir a la imagen 5 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('gallery1', 6)" aria-label="Ir a la imagen 6 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('gallery1', 7)" aria-label="Ir a la imagen 7 de 7"></button>
             </div>
 
             <!-- Flechas de navegación -->
@@ -220,55 +265,55 @@
         <!-- Segunda Galería (Quincho) -->
          
         <div class="gallery-container" data-gallery-id="quincho">
-         <h2 class="section-title">Construccion quincho; santa Fe Ciudad.</h2>   
+         <h3 class="section-title">Construccion quincho; santa Fe Ciudad.</h3>
             <!-- Container de imágenes -->
             <div class="images-wrapper">
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/Foto1.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto1.jpg" alt="Vista principal del quincho" width="918" height="918" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Vista principal del quincho</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/Foto2.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto2.jpg" alt="Área de descanso del quincho" width="1080" height="1080" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Área de descanso del quincho</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/Foto3.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto3.jpg" alt="Zona de parrilla del quincho" width="1080" height="1080" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Zona de parrilla</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/foto4.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto4.jpg" alt="Vista panorámica del quincho" width="1080" height="1080" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Vista panorámica del quincho</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/foto5.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto5.jpg" alt="Detalles del interior del quincho" width="1080" height="1080" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Detalles del interior</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/foto6.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto6.jpg" alt="Área de estar del quincho" width="1080" height="1080" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Área de estar</p>
                     </div>
                 </div>
                 <div class="image-slide">
-                    <img src="./fotos/Quincho Luciano y Jimena/foto10.jpg" alt="Quincho">
+                    <img src="assets/img/galeria-quincho/foto7.jpg" alt="Vista nocturna del quincho" width="1080" height="1080" loading="lazy" decoding="async">
                     <div class="image-info">
-                        <h3>Monoambiente</h3>
+                        <h4>Quincho</h4>
                         <p>Vista nocturna del quincho</p>
                     </div>
                 </div>
@@ -276,13 +321,13 @@
 
             <!-- Navegación con dots -->
             <div class="navigation">
-                <div class="nav-dot active" onclick="showImage('quincho', 1)"></div>
-                <div class="nav-dot" onclick="showImage('quincho', 2)"></div>
-                <div class="nav-dot" onclick="showImage('quincho', 3)"></div>
-                <div class="nav-dot" onclick="showImage('quincho', 4)"></div>
-                <div class="nav-dot" onclick="showImage('quincho', 5)"></div>
-                <div class="nav-dot" onclick="showImage('quincho', 6)"></div>
-                <div class="nav-dot" onclick="showImage('quincho', 7)"></div>
+                <button type="button" class="nav-dot active" onclick="showImage('quincho', 1)" aria-label="Ir a la imagen 1 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('quincho', 2)" aria-label="Ir a la imagen 2 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('quincho', 3)" aria-label="Ir a la imagen 3 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('quincho', 4)" aria-label="Ir a la imagen 4 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('quincho', 5)" aria-label="Ir a la imagen 5 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('quincho', 6)" aria-label="Ir a la imagen 6 de 7"></button>
+                <button type="button" class="nav-dot" onclick="showImage('quincho', 7)" aria-label="Ir a la imagen 7 de 7"></button>
             </div>
 
             <!-- Flechas de navegación -->
@@ -294,25 +339,25 @@
             <!--termina galeria-->   
             
         <p class="llamanos">Llamanos Ahora!</p>
-        <div class="pllamada" id="contacto">            
+        <div class="pllamada" id="contacto">
             <p>Luis Weiss - Maestro Mayor de Obra - </p>
-            <button>342 501-2784</button>
+            <a href="tel:+543425012784" class="cta-tel">342 501-2784</a>
         </div>
-        <footer>                    
-            <div class="fRedes">                
-                <img src="./logoP.png" alt="Logo Luis Weiss" class="fRimglogo">
+        <footer>
+            <div class="fRedes">
+                <img src="assets/img/logo-header.png" alt="Logo Luis Weiss" class="fRimglogo" width="500" height="500" loading="lazy" decoding="async">
                 <p>- 30 años junto a Usted -</p>
                 <div class="social">
-                    <a href="https://www.instagram.com/lw_obrasyservicios/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram fRimgRed" viewBox="0 0 16 16">
+                    <a href="https://www.instagram.com/lw_obrasyservicios/" target="_blank" rel="noopener" aria-label="Seguinos en Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram fRimgRed" viewBox="0 0 16 16" aria-hidden="true">
                         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                     </svg></a>
-                    <a href="https://wa.me/3425012784" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp fRimgRed" viewBox="0 0 16 16">
+                    <a href="https://wa.me/3425012784" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp fRimgRed" viewBox="0 0 16 16" aria-hidden="true">
                         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                    </svg></a>           
+                    </svg></a>
                 </div>
             </div>
             <div class = "experiencia">
-                <img src="./fotos/experiencia.png" alt="Logo Experiencia">
+                <img src="assets/img/footer/experiencia.png" alt="Logo Experiencia" width="1772" height="1772" loading="lazy" decoding="async">
             </div>
             <div class="fDatos">
                 <p class="dContacto">Contacto</p>
@@ -322,7 +367,7 @@
                 <p class="fData">(342) 501 - 2784</p>
             </div>
         </footer>
-        <a href="#top" class="boton-subir">↑</a>
+        <a href="#top" class="boton-subir" aria-label="Volver arriba">↑</a>
         
     </body>
 </html>

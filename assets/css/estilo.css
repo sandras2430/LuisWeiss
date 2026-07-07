@@ -1,9 +1,39 @@
+:root {
+    --color-primario: #1f2937;
+    --color-acento: #3882f6;
+    --color-texto-claro: #e5e7eb;
+    --color-marca: #0f095c;
+    --color-texto-oscuro: #333;
+    --radius-sm: 10px;
+    --radius-pill: 50px;
+    --transition-base: 0.3s ease;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+a, button, .nav-dot, .arrow, .video-trigger {
+    outline-offset: 2px;
+}
+
+a:focus-visible, button:focus-visible, .nav-dot:focus-visible, .arrow:focus-visible, .video-trigger:focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .images-wrapper, .nav-dot, .arrow, .boton-subir, .image-info {
+        transition: none !important;
+    }
 }
 
 h1 {
@@ -15,7 +45,7 @@ h1 {
 h2,
 h3 {
     text-align: center;
-    color: #1f2937;
+    color: var(--color-primario);
     margin-top: 0.7rem;
 }
 
@@ -27,7 +57,7 @@ a {
 .header {
     padding: 2% 5% 3% 5%;
     display: block;
-    background-color: #1f2937;
+    background-color: var(--color-primario);
     height: auto;
 }
 
@@ -42,11 +72,11 @@ a {
     width: 100px;
     height: auto;
     padding: 0px;
-    border-bottom: 1px solid #e5e7e9;
+    border-bottom: 1px solid var(--color-texto-claro);
 }
 
 .hInicio p {
-    color: #e5e7e9;
+    color: var(--color-texto-claro);
 }
 
 .hInicio ul {
@@ -58,7 +88,7 @@ a {
 
 .hInicio li {
     list-style-type: none;
-    color: #e5e7eb;
+    color: var(--color-texto-claro);
     width: 150px;
     text-align: center;
     height: auto;
@@ -67,9 +97,14 @@ a {
 }
 
 .hInicio li:hover {
-    background-color: #e5e7eb;
-    color: #1f2937;
+    background-color: var(--color-texto-claro);
+    color: var(--color-primario);
     cursor: pointer;
+}
+
+.hInicio a {
+    display: block;
+    color: inherit;
 }
 
 .hDetalle {
@@ -89,7 +124,7 @@ a {
 
 .hTexto p {
     width: 100%;
-    color: #e5e7eb;
+    color: var(--color-texto-claro);
     text-align: justify;
     margin: 0;
 }
@@ -127,16 +162,16 @@ a {
     width: 500px;
     height: auto;
     text-align: center;
-    color: #1f2937;
+    color: var(--color-primario);
 }
-#quincho-video, #termotanque-video, #yeso-video, #int2-video{
+#quincho-video, #termotanque-video, #termotanque2-video, #yeso-video, #int2-video{
         cursor:pointer;
         transition: transform 0.3s ease-in-out;
         position: relative;
         z-index: 1;
     }
-#quincho-video:hover, #termotanque-video:hover, #yeso-video:hover, #int2-video:hover { 
-  transform: scale(1.05);   
+#quincho-video:hover, #termotanque-video:hover, #termotanque2-video:hover, #yeso-video:hover, #int2-video:hover {
+  transform: scale(1.05);
   z-index: 2;
 }
 .serv p {
@@ -203,7 +238,7 @@ a {
     transform: translateY(0);
 }
 
-.image-info h3 {
+.image-info h4 {
     margin: 0 0 5px 0;
     font-size: 18px;
     font-weight: bold;
@@ -226,6 +261,9 @@ a {
 }
 
 .nav-dot {
+    appearance: none;
+    padding: 0;
+    font: inherit;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -233,6 +271,12 @@ a {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+}
+
+.video-trigger {
+    all: unset;
+    display: block;
+    cursor: pointer;
 }
 
 .nav-dot:hover {
@@ -294,13 +338,13 @@ a {
 
 .section-title {
     text-align: center;
-    color: #0f095c;
+    color: var(--color-marca);
     margin: 10px 0 10px 0;
     font-size: small;
 }
 
 .galerias {
-    color: #0f095c;
+    color: var(--color-marca);
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -347,10 +391,10 @@ a {
     object-fit: cover;
 }
 
-.marcas h4 {
-    border: 1px solid #0f095c;
+.marcas h2 {
+    border: 1px solid var(--color-marca);
     box-shadow: 2px 4px 16px rgba(141, 102, 102, 0.06);
-    color: #333;
+    color: var(--color-texto-oscuro);
     border-radius: 50px;
     padding: 10px;
     font-size: large;
@@ -362,7 +406,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: var(--color-texto-oscuro);
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -380,8 +424,8 @@ a {
 /* Llamada a la acción - FORMATO ORIGINAL */
 .pllamada {
     width: 600px;
-    background-color: #3882f6;
-    color: #e5e7e9;
+    background-color: var(--color-acento);
+    color: var(--color-texto-claro);
     border-radius: 10px;
     margin: auto;
     display: flex;
@@ -391,32 +435,40 @@ a {
     font-weight: 900;
 }
 
-.pllamada button {
-    background-color: #3882f6;
-    color: #e5e7e9;
+.pllamada .cta-tel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
     width: 300px;
     height: 50px;
     margin-bottom: 15px;
     font-size: xx-large;
-    border: 2px solid #e5e7eb;
-    border-radius: 10px;
+    border: 2px solid var(--color-texto-claro);
+    border-radius: var(--radius-sm);
     font-weight: bolder;
     margin-top: 20px;
+    transition: background-color var(--transition-base);
+}
+
+.pllamada .cta-tel:hover {
+    background-color: #111827;
 }
 
 .llamanos {
     margin: 50px auto 10px auto;
     text-align: center;
-    color: #0f095c;
-    font-family: 'Roboto', sans-serif;
+    color: var(--color-marca);
+    font-family: sans-serif;
     font-weight: 700;
     font-size: 28px;
 }
 
 /* Footer - FORMATO ORIGINAL */
 footer {
-    background-color: #1f2937;
-    color: #e5e7e9;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
     margin-top: 70px;
     height: 300px;
     width: 100%;
@@ -471,7 +523,7 @@ footer {
 .dContacto {
     font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
-    border-bottom: 1px solid #e5e7e9;
+    border-bottom: 1px solid var(--color-texto-claro);
 }
 
 .fData {
@@ -648,7 +700,7 @@ footer {
         padding: 1.5rem;
     }
     
-    .pllamada button {
+    .pllamada .cta-tel {
         width: 100%;
         max-width: 300px;
         font-size: large;
@@ -728,7 +780,7 @@ footer {
         font-size: 22px;
     }
     
-    .pllamada button {
+    .pllamada .cta-tel {
         height: 45px;
         font-size: medium;
     }
@@ -822,7 +874,7 @@ footer {
         padding: 20px 15px 10px;
     }
     
-    .image-info h3 {
+    .image-info h4 {
         font-size: 16px;
     }
     
@@ -869,7 +921,7 @@ footer {
         padding: 1rem;
     }
     
-    .pllamada button {
+    .pllamada .cta-tel {
         height: 40px;
         font-size: small;
     }
@@ -978,7 +1030,7 @@ footer {
         font-size: 18px;
     }
     
-    .pllamada button {
+    .pllamada .cta-tel {
         height: 35px;
         font-size: x-small;
     }
