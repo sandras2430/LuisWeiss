@@ -53,6 +53,10 @@ a {
     text-decoration: none;
 }
 
+img, video {
+    max-width: 100%;
+}
+
 /* Header - FORMATO ORIGINAL para pantallas grandes */
 .header {
     padding: 2% 5% 3% 5%;
@@ -375,6 +379,7 @@ a {
 
 #xtremo {
     width: 300px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -436,6 +441,7 @@ a {
 }
 
 .pllamada .cta-tel {
+    box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -467,6 +473,7 @@ a {
 
 /* Footer - FORMATO ORIGINAL */
 footer {
+    box-sizing: border-box;
     background-color: var(--color-primario);
     color: var(--color-texto-claro);
     margin-top: 70px;
