@@ -62,7 +62,9 @@ img, video {
     padding: 2% 5% 3% 5%;
     display: block;
     background-color: var(--color-primario);
+    background-image: linear-gradient(180deg, #26313f 0%, var(--color-primario) 60%);
     height: auto;
+    box-shadow: 0 12px 30px -18px rgba(0, 0, 0, 0.6);
 }
 
 .hInicio {
@@ -114,12 +116,61 @@ img, video {
 .hDetalle {
     display: flex;
     gap: 4%;
+    perspective: 1400px;
 }
 
 .hDetalle img {
     width: 50%;
     height: auto;
     object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.55);
+    animation: heroEntradaSuave 0.9s ease-out both;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Entrada segura por defecto (mobile incluido): solo fade + scale, sin
+   rotación 3D, para no arriesgar overflow horizontal en pantallas chicas. */
+@keyframes heroEntradaSuave {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* El tilt 3D (entrada + reposo + hover) solo se aplica de tablet en
+   adelante, donde hay margen visual de sobra alrededor de la imagen. */
+@media screen and (min-width: 769px) {
+    .hDetalle img {
+        animation: heroEntrada3D 1s ease-out both;
+    }
+
+    @keyframes heroEntrada3D {
+        from {
+            opacity: 0;
+            transform: rotateY(-16deg) rotateX(4deg) translateZ(-40px) scale(0.94);
+        }
+        to {
+            opacity: 1;
+            transform: rotateY(-7deg) rotateX(2deg) translateZ(0) scale(1);
+        }
+    }
+
+    .hDetalle img:hover {
+        transform: rotateY(0deg) rotateX(0deg) scale(1.035);
+        box-shadow: 0 35px 70px -18px rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hDetalle img {
+        animation: none;
+        transform: none;
+    }
 }
 
 .hTexto {
@@ -152,6 +203,13 @@ img, video {
     width: 250px;
     height: 150px;
     object-fit: cover;
+    box-shadow: 0 10px 25px -12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cFoText > img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -14px rgba(0, 0, 0, 0.45);
 }
 
 .serv img {
@@ -357,6 +415,7 @@ img, video {
 }
 
 .contenedorDeGalerias {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: flex-start;
