@@ -95,4 +95,5 @@ document.addEventListener('DOMContentLoaded', () => {
     hacerClickeable('yeso-video', 'assets/videos/yeso.mp4');
     hacerClickeable('int2-video', 'assets/videos/intertower-2.mp4');
     hacerClickeable('termotanque2-video', 'assets/videos/termotanque-2026.mp4');
+    hacerClickeable('remodelacion-video', 'assets/videos/remodelacion.mp4');
 });
